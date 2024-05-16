@@ -14,10 +14,12 @@
 
 <body>
 	<button style="position: fixed; z-index: 100;" id="blebtn">Connect Node</button>
+	<div id="data"></div>
 </body>
 <script>
 	window.rotateModel = function(x, y, z, w) {
 		console.log('rotateModel', x, y, z, w);
+		document.getElementById('data').innerText = `rotateModel ${x} ${y} ${z} ${w}`;
 	}
 </script>
 <script type="module" src="main.js"></script>
